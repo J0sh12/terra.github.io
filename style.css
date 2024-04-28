@@ -1,0 +1,22 @@
+/* Green and font size*/
+.green{
+	color: rgba(0,255,0,100%); 
+	font-size: 20px;
+	
+}
+/*Blue and font size*/
+.blue{
+	color: #0000FF;
+	font-size: 25px;
+	
+	}
+/* font size*/	
+	.font{
+		font-size: 25px;
+		
+	}
+	/* padding and margin*/
+	.padding{
+		padding: 10px;
+		margin: 5px;
+	}
