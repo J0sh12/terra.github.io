@@ -3,27 +3,25 @@
   <!-- Start of page -->
   <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-	
   </head>
   <body>
    <!-- used HEX for color-->
-	<center>
-    <h3>Introduction<h3>
-    	</div>
+	<div class="blue">
+    <center>
+	
+	<div class="image-container">
+		<img src="introduction.png" alt="Introduction">
+	</div>
+	
+	</div>
 	<center>
 	<div>
       <p>
       My name is Josue, I am currently 19 years old. I enjoy doing archery every once in a while. </br> I enjoy working with technology and working towards my associates degree in Computer Support Specialist. </br> I hope to be able to use my skills to help people with any technical issues.
       </p>
 	 </div>
-	<center>
-	<nav>
-  
-  	<ul>
-    		<li><a href="table.html" title="Favorite Video Games">Click here to check out my favorite video games</a></li>
-  	</ul>
-  
-	</nav>
+	 <center>
+	 
 	<p style= "color: gray; font-size: 20px;">
 		 These are my favorite foods
 	</p>
@@ -45,15 +43,33 @@
 	
 	
 	<!--Used RGB for color-->
-	<ul>
-		<li><a href="drink.html" title="Favorite Drinks">Click here to see my favorite drinks</a></li>
-	</ul>
-	
-	<ul>
-		<li><a href="input.html" title="Email">Enter your Info here</a></li>
-	</ul>
+
 	
 	
+<select id="destination">
+  <option value="">Choose a where you want to go</option>
+  <option value="input.html">Enter Your information here</option>
+  <option value="drink.html">Check out my favorite Drinks</option>
+  <option value="table.html">Check out my favorite video games</option>
+</select>
+
+<button onclick="redirectToPage()">Go</button>
+
+<script>
+function redirectToPage() {
+  var destination = document.getElementById("destination").value;
+  if (destination !== "") {
+    window.location.href = destination;
+  } else {
+    alert("Please choose a destination first.");
+  }
+}
+</script>
+	
+	
+	
+	
+
     
   </body>
   <!-- End of page -->
