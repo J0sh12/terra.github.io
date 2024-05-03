@@ -20,6 +20,59 @@
 		padding: 10px;
 		margin: 5px;
 	}
-.table, th, td{
+	table, th, td{
 		border: 3px solid black;
 	}
+	input:focus{
+		border: 4px solid red;
+	}
+	
+	@keyframes rainbow {
+    0% {
+			color: blue;
+		}
+    12.5% {
+			color: purple;
+		}
+    25% {
+			color: indigo;
+		}
+	37.5% {
+			color: red;
+		}
+    50% {
+			color: orange;
+		}
+    62.5% {
+			color: yellow;
+		}
+    75% {
+			color: yellowgreen;
+		}
+    87.5% {
+			color: green;
+		}
+    100% {
+			color: blue;
+		}
+	}
+	a:hover{
+		animation: rainbow 4s linear infinite;
+	}
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Add transition effect */
+}
+
+.image-container:hover img {
+    transform: scale(1.2); /* Adjust scale factor as needed */
+}
+	
